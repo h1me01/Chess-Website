@@ -1,0 +1,74 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    padding: 10%;
+    padding-top: 20%;
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    width: 33%;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .content h2 {
+        color: rgb(90, 77, 77, 0.5);
+        font-size: 2.5rem;
+        padding: 10%;
+        margin: 0;
+    }
+
+#btnSignup:hover {
+    cursor: pointer;
+    background: rgb(239, 228, 228, 0.5);
+    transition: all 0.5s ease;
+}
+
+input, #btnSignup {
+    font-size: 16px;
+    height: 56px;
+    border: none;
+    padding: 20px 0px;
+    border-bottom: solid 1px rgba(0,0,0, 0.1);
+    background: rgb(251, 254, 254, 0.5);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+    width: 280px;
+    box-sizing: border-box;
+    transition: all .3s linear;
+    color: #000;
+    font-weight: 400;
+    -webkit-appearance: none;
+    outline: 0;
+    box-shadow: 0 2px 6px -8px rgba($primary, .45);
+}
+
+#UserMail, #UserPassword, #Username {
+    padding: 10%;
+}
+
+p a {
+    color: white;
+}
+
+p {
+    padding: 5%;
+    color: white;
+}

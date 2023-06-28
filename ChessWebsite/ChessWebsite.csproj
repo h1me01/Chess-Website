@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\js\SignalR\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\ChessLib\ChessPieces\bb.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\bk.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\bn.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\bp.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\bq.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\br.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\wb.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\wk.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\wn.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\wp.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\wq.png" />
+    <None Include="wwwroot\js\ChessLib\ChessPieces\wr.png" />
+    <None Include="wwwroot\js\ChessLib\Logic\Check.js" />
+    <None Include="wwwroot\js\ChessLib\Logic\Chess.js" />
+    <None Include="wwwroot\js\ChessLib\Logic\Fen.js" />
+    <None Include="wwwroot\js\ChessLib\Logic\King.js" />
+    <None Include="wwwroot\js\ChessLib\Logic\Move.js" />
+    <None Include="wwwroot\js\ChessLib\Logic\Pawn.js" />
+    <None Include="wwwroot\js\ChessLib\Logic\Pieces.js" />
+    <None Include="wwwroot\js\ChessLib\Openings\Openings.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

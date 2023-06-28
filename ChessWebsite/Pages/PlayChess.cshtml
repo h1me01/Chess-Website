@@ -1,0 +1,57 @@
+﻿@page
+@using Microsoft.AspNetCore.Http
+@model ChessWebsite.Pages.PlayChessModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayChess</title>
+    <link rel="shortcut icon" href="~/img/logo.png" />
+    <link rel="stylesheet" href="~/css/playchess.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+</head>
+<body>
+@*    <div>
+    <input type="text" id="playerName" />
+    <button id="joinButton">Join Game</button>
+    </div>
+*@
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <table>
+                    <tbody id="chessboard"></tbody>
+                </table>
+            </div>
+            <div class="col">
+                <div class="content">
+                    <div id="playerName">@HttpContext.Session.GetString("username")</div>
+
+                    <button id="startGame">Play</button>
+
+                    <div class="playerInfo">
+                        <span id="playerWhite">White:</span>
+                        <span id="playerWhiteTime">Time: 30:00</span>
+                    </div>
+                    <div class="playerInfo">
+                        <span id="playerBlack">Black:</span>
+                        <span id="playerBlackTime">Time: 30:00</span>
+                    </div>
+
+                    <div class="gameButtons">
+                        <button id="resignButton">Resign</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/SignalR/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/ChessLib/Logic/Chess.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

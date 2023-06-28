@@ -1,0 +1,5 @@
+{
+  "DatabaseConnectionString": {
+    "ChessWebsite": "server=127.0.0.1;port=3308;user=root;password=1234;database=ChessWebsite"
+  }
+}

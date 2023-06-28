@@ -1,0 +1,52 @@
+﻿body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.ranking {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+#playerName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(180, 40, 20);
+}
+
+.participantTitle {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.participant-list {
+    margin-top: 10px;
+}
+
+.participant-list-item {
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    color: rgb(130, 111, 111);
+}
+
+.participant-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.stats {
+    margin: auto;
+    width: 50vw;
+}

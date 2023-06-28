@@ -1,0 +1,73 @@
+﻿body {
+    background-color: #f9f9f9;
+  }
+
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+    padding: 3%;
+  }
+
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .profile-info-item {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .games-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .games-table th,
+  .games-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .games-table th {
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+
+  .game-result {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .analyze-button {
+    background-color: #625550;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .analyze-button:hover {
+    background-color: #514d49;
+  }
